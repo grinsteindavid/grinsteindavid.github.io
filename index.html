@@ -890,38 +890,22 @@
    		<div class="col-twelve">
 
             <!-- form -->
-		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzE4AIJSKILnGx591QPK2UfnJnVv4pwTaMTXrwFUougufJfQ/viewform?embedded=true" width="640" height="896" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
-
-            <form name="contactForm" id="contactForm" method="post" action="">
-      			<fieldset>
-
-                  <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                  </div>
-                  <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	               </div>
-                  <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-	               </div>                       
-                  <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div>                      
-                 <div class="form-field">
-                     <button class="submitform">Submit</button>
-                     <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>                             
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
-								</div>
-							</div>
-                  </div>
-
-      			</fieldset>
-      		</form> <!-- Form End -->
+		<style>
+			.resp-container {
+			    position: relative;
+			    overflow: hidden;
+			    padding-top: 56.25%;
+			}
+			.resp-iframe {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    border: 0;
+			}
+		</style>
+		<div class="resp-container"> <iframe class="resp-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdzE4AIJSKILnGx591QPK2UfnJnVv4pwTaMTXrwFUougufJfQ/viewform?embedded=true">Loading...</iframe> </div>
 
             <!-- contact-warning -->
             <div id="message-warning">            	
