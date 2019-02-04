@@ -902,7 +902,7 @@
 			.resp-container {
 			    position: relative;
 			    overflow: hidden;
-			    padding-top: 200%;
+			    padding-top: 100%;
 			}
 			.resp-iframe {
 			    position: absolute;
@@ -911,6 +911,13 @@
 			    width: 100%;
 			    height: 100%;
 			    border: 0;
+			}
+			@media only screen and (max-width: 768px) {
+			  .resp-container {
+				position: relative;
+				overflow: hidden;
+				padding-top: 200%;
+			   }
 			}
 		</style>
 		<div class="resp-container"> <iframe class="resp-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdzE4AIJSKILnGx591QPK2UfnJnVv4pwTaMTXrwFUougufJfQ/viewform?embedded=true">Loading...</iframe> </div>
