@@ -15,10 +15,10 @@
    $(window).load(function() {
 
       // will first fade out the loading animation 
-    	$("#loader").fadeOut("slow", function(){
+    	$("#loader").fadeOut("fast", function(){
 
         // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
+        $("#preloader").delay(150).fadeOut("slow");
 
       });       
 
@@ -45,7 +45,12 @@
 	/* Owl Carousel
 	------------------------------------------------------ */ 
 	$("#owl-slider").owlCarousel({
-        navigation: false,
+	loop:true,
+	autoplay:true,
+	autoplayTimeout:1000,
+	autoplayHoverPause:true,
+        //navigation: true,
+	//autoplayTimeout: 2000,
         pagination: true,
         itemsCustom : [
 	        [0, 1],
