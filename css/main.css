@@ -1906,6 +1906,8 @@ header .logo a {
 }
 .popup-modal .description-box {
 	padding: 1.8rem 3.6rem 3rem;
+	overflow-y: scroll;
+    max-height: 200px;
 }
 .popup-modal .description-box h4 {
 	font-family: "poppins-bold", sans-serif;
