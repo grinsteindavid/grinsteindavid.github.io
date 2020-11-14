@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'deploying'
                 sh 'docker images'
-                sh 'docker service create --name gitub-blog -p 80:80 github-blog:latest || docker service update github-blog'
+                sh 'docker service create --name github-blog -p 80:80 github-blog:latest || docker service update github-blog'
             }
         }
     }
