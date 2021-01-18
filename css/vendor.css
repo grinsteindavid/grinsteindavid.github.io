@@ -17,6 +17,12 @@
  *	 v1.3.3
  */
 
+ .service-content {
+	 background-color: #1d1d1d;
+	 padding: 10px;
+	 margin: 10px;
+ }
+
 /* clearfix */
 .owl-carousel .owl-wrapper:after {
 	content: ".";
