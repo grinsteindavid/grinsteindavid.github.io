@@ -128,38 +128,25 @@
 
 					<img src="https://avatars.githubusercontent.com/grinsteindavid" alt="Profile Picture">
 
-					<p class="lead">IT Professional with four years working in the area of software development remotely
-						for US companies and more than ten as
-						a hobby. I have been in charge of both the frontend and backend side with an environment
-						where we apply agile
-						development (scrum), automated tests and constant training that allows us to grow and be
-						prepared for new challenges.</p>
+					<p class="lead">IT Professional with almost six years working in software development, remotely for U.S companies and more than ten as a hobby. I have been in charge of both, the frontend and backend side with an environment where we apply agile development (scrum), automated tests and constant training that allows us to grow and be prepared for new challenges. I do believe in strong work ethics, communication is key and I'm always thinking about what's next.</p>
 				</div>
 
 			</div>
 		</div> <!-- /section-intro -->
 
 		<div class="row about-content">
-
-			<div class="col-six tab-full">
-
-				<!-- <h3>Profile</h3>
-				<p>Semi-senior professional with experience in the IT sector for a while. Currently working remote as
-					Project Manager in charge of Atnigh Media and Sway Nightclub in the US and Smash Media application
-					architect located in Costa Rica.</p> -->
-
-				<ul class="info-list">
+			<ul class="info-list">
 					<li>
 						<strong>Fullname:</strong>
 						<span>David Miranda Grinstein</span>
 					</li>
 					<li>
 						<strong>Birth Date:</strong>
-						<span>Feb 04, 1993</span>
+						<span>Feb, 1993</span>
 					</li>
 					<li>
 						<strong>Job:</strong>
-						<span>Typescript Engineer / Application Architect</span>
+						<span>Tech Lead / FullStack (DevOps, Front, Back, Q.A) / Application Architect</span>
 					</li>
 					<li>
 						<strong>Email:</strong>
@@ -167,103 +154,6 @@
 					</li>
 
 				</ul> <!-- /info-list -->
-
-			</div>
-
-			<div class="col-six tab-full">
-
-				<h3>Skills</h3>
-				<!--<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>-->
-
-				<ul class="skill-bars">
-					<li>
-						<div class="progress percent95">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>Application architect</strong>
-					</li>
-					<li>
-						<div class="progress percent95">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>Typescript & ES6</strong>
-					</li>
-					<li>
-						<div class="progress percent95">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>React Web and Hooks</strong>
-					</li>
-					<li>
-						<div class="progress percent90">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>Redux, Redux starter kit, Context</strong>
-					</li>
-					<li>
-						<div class="progress percent60">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>React native Mobile Development</strong>
-					</li>
-					<li>
-						<div class="progress percent90">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>Nodejs and Express</strong>
-					</li>
-					<li>
-						<div class="progress percent75">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>Jest, Enzyme, React Testing Lib</strong>
-					</li>
-					<li>
-						<div class="progress percent75">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>Cypress</strong>
-					</li>
-					<li>
-						<div class="progress percent60">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>Amazon Web Services</strong>
-					</li>
-
-					<li>
-						<div class="progress percent70">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>Docker, Compose, Swarm</strong>
-					</li>
-					<li>
-						<div class="progress percent60">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>Jenkins CI/CD</strong>
-					</li>
-					<li>
-						<div class="progress percent30">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>Blockchain / Etherium API</strong>
-					</li>
-					<li>
-						<div class="progress percent60">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>CSS3</strong>
-					</li>
-					<li>
-						<div class="progress percent30">
-							<!--<span>0%</span>-->
-						</div>
-						<strong>UX/UI Design</strong>
-					</li>
-				</ul> <!-- /skill-bars -->
-
-			</div>
 
 		</div>
 
@@ -899,6 +789,7 @@
 			const response = await fetch('https://api.github.com/users/grinsteindavid/repos')
 			const repositories = await response.json()
 			const sliderContainer = document.querySelector('.row.services-content')
+
 
 			repositories.forEach(({ name, svn_url, description }) => {
 

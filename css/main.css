@@ -1516,10 +1516,11 @@ header .logo a {
 }
 
 .about-content {
-	position: relative;
 	text-align: left;
-	max-width: 850px;
-	margin-bottom: 3.6rem;
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 24px;
+    width: 26em
 }
 .about-content h3 {
 	font-family: "poppins-bold", sans-serif;
@@ -2131,6 +2132,8 @@ header .logo a {
 }
 .services-content {
 	max-width: 1200px;
+	max-height: 40em;
+	overflow-y: scroll;
 }
 .services-list {
 	margin-top: 1.2rem;
