@@ -1,0 +1,15 @@
+# Git Commit Best Practices
+
+1. **Write Clear and Concise Commit Messages**
+    - Use the imperative mood in the subject line (e.g., "Fix bug" instead of "Fixed bug").
+    - Keep the subject line to 50 characters or less.
+    - Separate the subject from the body with a blank line.
+    - Use the body to explain what and why vs. how.
+
+Example of a good commit message:
+Add user authentication
+
+- Implement login and registration functionality
+- Add password encryption using bcrypt
+- Create user session management
+- Update tests to cover new authentication features
