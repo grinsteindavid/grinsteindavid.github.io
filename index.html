@@ -208,7 +208,7 @@
 
 						<div class="timeline-content">
 							<h4>Smash Media Inc | Marketing and A.I Traffic Service</h4>
-							<p>Developed and maintained web applications using TypeScript, React, and Node.js. Implemented CI/CD pipelines and automated testing.</p>
+							<p>Developed and maintained web applications using TypeScript, React, and Node.js. Implemented CI/CD pipelines and automated testing. Utilized AWS for DevOps, and integrated AI agents workflow, R.A.G, embeddings, and training workflow. Established global rules for code editors and automated code reviews with GitHub Actions.</p>
 						</div>
 
 					</div> <!-- /timeline-block -->
@@ -226,7 +226,7 @@
 
 						<div class="timeline-content">
 							<h4>Atnight Media | atnight.com</h4>
-							<p>Managed and coordinated IT projects, ensuring timely delivery and adherence to quality standards. Collaborated with cross-functional teams to define project requirements and scope.</p>
+							<p>Atnight.com is a premier nightlife platform dedicated to showcasing South Florida's vibrant party scene, particularly in Miami. Worked extensively with AWS for cloud services, Kubernetes for container orchestration, and Laravel for backend development. Collaborated with cross-functional teams to define project requirements and scope. Additionally, developed a small React Native app for promoters to manage events and guest lists.</p>
 						</div>
 
 					</div> <!-- /timeline-block -->
@@ -640,54 +640,7 @@
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		async function fetchRepositories() {
-			const response = await fetch('https://api.github.com/users/grinsteindavid/repos')
-			const repositories = await response.json()
-			const sliderContainer = document.querySelector('.row.services-content')
-
-
-			repositories.forEach(({ name, svn_url, description }) => {
-
-				const serviceContainer = document.createElement('div')
-				const iconContainer = document.createElement('span')
-				const icon = document.createElement('i')
-				const serviceContent = document.createElement('div')
-				const serviceContentTitleContainer = document.createElement('a')
-				const serviceContentTitleText = document.createElement('span')
-				const serviceContentDescription = document.createElement('p')
-
-				serviceContainer.classList.add('service')
-				iconContainer.classList.add('icon')
-				icon.classList.add('fa')
-				icon.classList.add('fa-github')
-				serviceContent.classList.add('service-content')
-				serviceContentDescription.classList.add('desc')
-				serviceContentTitleContainer.setAttribute('target', '_blank')
-				serviceContentTitleContainer.setAttribute('href', svn_url)
-
-				serviceContentTitleContainer.style.color = 'white'
-				serviceContentTitleText.style.textTransform = 'uppercase'
-				serviceContentTitleText.style.fontWeight = 'bolder'
-				serviceContentTitleText.style.marginLeft = '5px'
-
-				serviceContentTitleText.textContent = name
-				serviceContentDescription.textContent = description
-
-				iconContainer.appendChild(icon)
-				serviceContent.appendChild(serviceContentTitleContainer)
-				serviceContent.appendChild(serviceContentDescription)
-
-				serviceContentTitleContainer.appendChild(iconContainer)
-				serviceContentTitleContainer.appendChild(serviceContentTitleText)
-				serviceContainer.appendChild(serviceContent)
-
-				sliderContainer.appendChild(serviceContainer)
-			})
-		}
-
-		fetchRepositories()
-	</script>
+	<script src="js/fetchRepositories.js"></script>
 
 </body>
 
