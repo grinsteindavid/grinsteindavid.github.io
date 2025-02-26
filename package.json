@@ -1,0 +1,14 @@
+{
+  "name": "grinsteindavid-portfolio",
+  "version": "1.0.0",
+  "description": "David M. Grinstein's personal portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "author": "David M. Grinstein",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "14.0.1"
+  }
+}
