@@ -1294,11 +1294,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/qc.jpg) no-repeat center bottom;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
+	background: #151515;
 	width: 100%;
 	height: 100%;
 	min-height: 720px;
@@ -1306,14 +1302,52 @@ header .logo a {
 	position: relative;
 	text-align: center;
 }
-.intro-overlay {
+
+/* Quantum Animation */
+.quantum-container {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #111111;
-	opacity: .85;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.quantum-particle {
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	background: rgba(220, 20, 60, 0.8);
+	border-radius: 50%;
+	animation: quantum 8s infinite linear;
+}
+
+@keyframes quantum {
+	0% {
+		transform: scale(1) rotate(0deg);
+		opacity: 0;
+	}
+	20% {
+		opacity: 0.8;
+	}
+	80% {
+		opacity: 0.8;
+	}
+	100% {
+		transform: scale(30) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+.intro-overlay {
+	opacity: .75;
+	z-index: 2;
+}
+
+.intro-content {
+	z-index: 3;
+	position: relative;
 }
 
 .intro-content {

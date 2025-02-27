@@ -293,4 +293,30 @@
 
 	});		
 
+	/* Quantum Animation
+	 * -------------------------------------------------- */
+	function createQuantumParticles() {
+	    const container = document.querySelector('.quantum-container');
+	    const particleCount = 50;
+
+	    for (let i = 0; i < particleCount; i++) {
+	        const particle = document.createElement('div');
+	        particle.className = 'quantum-particle';
+	        
+	        // Random position
+	        particle.style.left = Math.random() * 100 + '%';
+	        particle.style.top = Math.random() * 100 + '%';
+	        
+	        // Random animation delay
+	        particle.style.animationDelay = Math.random() * 8 + 's';
+	        
+	        container.appendChild(particle);
+	    }
+	}
+
+	// Add to document ready
+	$(document).ready(function() {
+	    createQuantumParticles();
+	});
+
 })(jQuery);
