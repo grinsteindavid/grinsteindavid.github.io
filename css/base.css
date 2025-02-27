@@ -505,10 +505,10 @@ textarea {
  */
 @media screen and (max-width:768px) {
 	.row {
-		width: auto;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
 
 	.row .row {
 		padding-left: 0;
@@ -518,8 +518,8 @@ textarea {
 	}
 
 	[class*="col-"] {
-		padding: 0 15px;
-	}
+        padding: 0;
+    }
 
 	.tab-1-4 {
 		width: 25%;
