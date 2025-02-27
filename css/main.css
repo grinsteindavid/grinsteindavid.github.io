@@ -1305,39 +1305,40 @@ header .logo a {
 
 /* Quantum Animation */
 .quantum-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .quantum-particle {
-	position: absolute;
-	width: 2px;
-	height: 2px;
-	background: rgba(220, 20, 60, 0.8);
-	border-radius: 50%;
-	animation: quantum 8s infinite linear;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(220, 20, 60, 0.8);
+    border-radius: 50%;
+    animation: quantum 8s infinite ease-out;
+    opacity: 0;
 }
 
 @keyframes quantum {
-	0% {
-		transform: scale(1) rotate(0deg);
-		opacity: 0;
-	}
-	20% {
-		opacity: 0.8;
-	}
-	80% {
-		opacity: 0.8;
-	}
-	100% {
-		transform: scale(30) rotate(360deg);
-		opacity: 0;
-	}
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(30);
+        opacity: 0;
+    }
 }
 
 .intro-overlay {
