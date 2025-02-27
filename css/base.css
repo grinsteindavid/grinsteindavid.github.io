@@ -24,10 +24,12 @@ html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+    overflow-x: hidden; /* Add this */
 }
 
 body {
 	margin: 0;
+    overflow-x: hidden; /* Add this */
 }
 
 article,
@@ -249,6 +251,7 @@ th {
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
+    overflow-x: hidden; /* Add this */
 }
 
 *,
@@ -264,6 +267,7 @@ body {
 	word-wrap: break-word;
 	-webkit-overflow-scrolling: touch;
 	-webkit-text-size-adjust: none;
+    overflow-x: hidden; /* Add this */
 }
 
 body,
@@ -508,6 +512,8 @@ textarea {
         padding-left: 0;
         padding-right: 0;
         width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
 	.row .row {
@@ -515,10 +521,14 @@ textarea {
 		padding-right: 0;
 		margin-left: -15px;
 		margin-right: -15px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
 	}
 
 	[class*="col-"] {
         padding: 0;
+        padding: 0 15px;
     }
 
 	.tab-1-4 {
@@ -594,6 +604,9 @@ textarea {
 		padding-right: 0;
 		margin-left: 0;
 		margin-right: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
 	}
 
 	[class*="col-"] {
@@ -603,6 +616,10 @@ textarea {
 		margin-left: 0;
 		margin-right: 0;
 		padding: 0;
+        padding: 0 15px;
+        float: none;
+        clear: both;
+        margin: 0;
 	}
 
 	[class*="col-"] + [class*="col-"].end {
