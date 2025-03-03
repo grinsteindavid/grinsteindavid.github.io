@@ -37,6 +37,7 @@
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
+@import url("quantum.css");
 
 
 /** 
@@ -1300,73 +1301,6 @@ header .logo a {
 	display: table;
 	position: relative;
 	text-align: center;
-}
-
-/* Quantum Animation */
-.quantum-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.quantum-particle {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: rgba(220, 20, 60, 0.8);
-    border-radius: 50%;
-    animation: quantum 5s infinite ease-out;
-    opacity: 0;
-    will-change: transform, opacity;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-@keyframes quantum {
-    0% {
-        transform: scale(1);
-        opacity: 0;
-    }
-    15% {
-        opacity: 0.8;
-    }
-    85% {
-        opacity: 0.8;
-    }
-    100% {
-        transform: scale(20);
-        opacity: 0;
-    }
-}
-
-/* Explicit iOS animation fix */
-@supports (-webkit-touch-callout: none) {
-    .quantum-particle {
-        width: 6px;
-        height: 6px;
-        transform: translate3d(0, 0, 0);
-    }
-    
-    @keyframes quantum {
-        0% {
-            transform: scale(1) translate3d(0, 0, 0);
-            opacity: 0;
-        }
-        15% {
-            opacity: 0.8;
-        }
-        85% {
-            opacity: 0.8;
-        }
-        100% {
-            transform: scale(15) translate3d(0, 0, 0);
-            opacity: 0;
-        }
-    }
 }
 
 .intro-overlay {
